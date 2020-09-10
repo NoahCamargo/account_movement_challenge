@@ -1,0 +1,7 @@
+version: '3'
+services:
+  web:
+    build: .
+    volumes:
+      - .:/account_movement_challenge
+    command: irb -I . -r account_movement_challenge.rb
